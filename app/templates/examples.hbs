@@ -1,3 +1,8 @@
 {{page-title 'Examples'}}
-<h1> List of Examples </h1>
+<h2> List of Examples </h2>
+<ul>
+  {{#each @model as |example|}}
+    <li>{{example}}</li>
+  {{/each}}
+</ul>
 {{outlet}}

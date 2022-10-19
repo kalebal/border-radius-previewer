@@ -1,5 +1,8 @@
 <h2>{{@title}}</h2>
-<p>(TODO: clicking an example updates slider/box style values)</p>
+<LinkTo @route='circle-examples' class='button'>Circular examples</LinkTo>
+<LinkTo @route='examples' class='button'>Rectangular examples</LinkTo>
+<p>(TODO: clicking an example updates slider/box style values, conditional links
+  and/or active states)</p>
 <ul>
   {{#each @examples as |example|}}
     <li>

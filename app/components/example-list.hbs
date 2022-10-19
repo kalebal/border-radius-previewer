@@ -1,1 +1,12 @@
-{{yield}}
+<h2>{{@title}}</h2>
+<p>(TODO: clicking an example updates slider/box style values)</p>
+<ul>
+  {{#each @examples as |example|}}
+    <li>
+      <button
+        type='button'
+        {{on 'click' (fn this.showExample example)}}
+      >{{example}}</button>
+    </li>
+  {{/each}}
+</ul>
